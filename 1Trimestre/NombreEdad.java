@@ -8,7 +8,7 @@ public class NombreEdad {
         String nombre = teclado.nextLine();
 
         System.out.println("Ingresa la edad: ");
-        String edad = teclado.nextLine();
+        int edad = teclado.nextInt();
         
     }
     
