@@ -16,14 +16,17 @@ public class BuscarNumMayor {
         }else if (num2 > num1 && num2 > num3) {
             System.out.println("El numero mayor es:" + num2);
             
-        }else if (num1 == num2 && num2==num3 && num3>num1 && num3>num2) {
-            System.out.println("El numero mayor es: " + num3);
+        }else if (num1 >= num2 && num2 >= num3 && num3<num1 && num3<num2) {
+            System.out.println("Los numeros mayores son: " + num1 + " y " + num2);
         }
-        else if (num1>num2 && num1>num3 && num2==num3 && num3==num2){
-            System.out.println("El numero mayor es: " + num1);
+        else if (num1 >= num3 && num2<num1 && num3>=num1 && num2<num3){
+            System.out.println("Los numeros mayores son: " + num1 + " y " + num3);
         }
         else if (num1 == num2 && num1==num3 && num2>num1 && num2>num3) {
             
+        }
+        else if (num1<num2 && num1<num3 && num2>=num3 && num3>=num2) {
+            System.out.println("Los numeros mayores son: " + num2 + " y " + num3);
         }
         else if (num3 > num1 && num3>num2) {
             System.out.println("El numero mayor es:" + num3);
