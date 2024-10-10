@@ -1,4 +1,4 @@
-package Ejercicios;
+
 
 public class BuclesEj {
     public static void main(String[] args) {
