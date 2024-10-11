@@ -3,23 +3,25 @@ import java.util.Scanner;
 public class Ejercicio22 {
     public static void main(String[] args) {
         int num;
-        int aleatorio= (int) + (Math.random() * (100+900));
+        int aleatorio= (int) (100 + Math.random() * (999-100+1));
         int intentos=5;
+        System.out.println("E numero aleatorios es:" + aleatorio);
         Scanner teclado = new Scanner(System.in);
             System.out.println("Introduzca un numero:");
-            num=teclado.nextInt(intentos);
-           
-            for (int i=1; i<intentos; i++){
-                System.out.println(i);
-                int usuario= teclado.nextInt();
+            num=teclado.nextInt();
+            
 
-                if (intentos != usuario) {
-                    System.out.println("Se ha terminado el numero de intentos");
-                }else if(usuario == intentos){
-                    System.out.println("Enhorabuena has acertado el numero");
+            while (intentos>0){
+                if (num !=aleatorio) {
+                    System.out.println("No es el numero, intentar otra vez");
+                    num=teclado.nextInt();
+                    intentos --;
+                }else {
+                    System.out.println("Has acertado el numero");
+                    intentos=0;
                 }
             }
-        }
 
     }
+}
 
