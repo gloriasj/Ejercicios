@@ -9,15 +9,15 @@ public class Ejercicio29 {
 
         for (int i = 1; i <= altura; i++) {
             for (int j = 1; j < altura -1 ; j++) {
-                System.out.println(" ");
+                System.out.print(" ");
             }
             for (int j = 1; j <= (2 * i -1); j++) {
-                System.out.print(" * ");
+                System.out.print("*");
             }
-           
-        }
-             //SALTO DE LINEA
+            //SALTO DE LINEA
        System.out.println();
+        }
+            
 
         
     }
