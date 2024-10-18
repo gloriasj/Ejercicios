@@ -9,7 +9,7 @@ public class Ejercicio38 {
 
         for (int i = 0; i < num; i++) {
             for (int j = 0; j <=i; j++) {
-                System.out.print(j + " ");
+                System.out.print(j + " ");//SIN SALTO DE LINEA
             }
             System.out.println(); //SALTO EN LINEA
         }
