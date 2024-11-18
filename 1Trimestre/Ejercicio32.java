@@ -36,10 +36,10 @@ do {
         case 4:
             System.out.println("Solucion de la division: ");
             System.out.println(num1/num2);
-
+            break;
     
         default:
-            System.out.println("No se puede mostrar ninguna operacion");
+            System.out.println("ADIOSSS");
             break;
     }
 } while(operaciones !=0);
